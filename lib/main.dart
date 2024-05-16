@@ -54,7 +54,7 @@ class _MygptChatMainState extends State<MygptChatMain> {
     isLoading= false;
   }
   Future<String> generateRespone(String prompt) async{
-    const apikey = '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';
+    const apikey = 'MyAPIKey';
     var url = Uri.https("api.openai.com","/v1/completions");
     final respone = await https.post(url,
       headers: {
